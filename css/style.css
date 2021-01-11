@@ -1,0 +1,284 @@
+body {
+    box-sizing: border-box;
+    margin:0;
+    font-family: 'IBM Plex Serif', serif;
+    box-sizing: border-box;
+}
+
+.contenedor {
+    background-color: white;
+    min-height: calc( 100vh - 10px );
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 20px 30px 0 30px;
+}
+
+.contenedoraside {
+    max-width: 200px;
+
+}
+
+aside {
+    float:right;
+    margin-left: 1%;
+
+}
+
+.boton {
+    background-color: rgb(112, 107, 107);
+    max-width: 60px;
+    margin:auto;
+}
+
+nav {
+    background-color: #3F51B5;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+i {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+nav ul {
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+nav ul li {
+    padding: 1rem;
+}
+nav ul li:hover {
+    background-color: #1a2770;
+}
+nav ul a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+/** Menu Sencillo **/
+.sencillo ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    justify-content: space-between;
+}
+.sencillo ul li{
+    text-align:center;
+    margin-bottom: 10px;
+    flex:1;
+}
+@media screen and (min-width:768px) {
+    .sencillo ul {
+        flex-direction: row;
+    }
+    .sencillo ul li {
+        margin-bottom: 0px;
+    }
+}
+h1 {
+    font-family: 'serif', Arial;
+    flex: 0 1 100%;
+    text-align: center;
+    font-size: 2.6rem;
+}
+
+h2 {
+    flex: 0 1 100%;
+    text-align: center;
+    font-size: 1.6rem;
+}
+h3 {
+    font-family: 'Arial', serif;
+    margin:0;
+    font-weight: 700;
+}
+
+h4 {
+    font-family: 'Arial', serif;
+    margin:3;
+    text-align: center;
+    font-weight: 600;
+}
+
+img {
+    max-width: 100%;
+}
+video {
+    max-width: 100%;
+}
+.contenido {
+    background-color: white;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+
+.contenido p {
+    text-align: center;
+    font-size: .8rem;
+    line-height: 1.0rem;
+}
+.contenido h3 {
+    text-align: center;
+    font-size: .9rem;
+    line-height: 1.4rem;
+}
+
+.contenido span {
+    color:#a9a9c0d2;
+}
+
+
+
+/** Redes Socialaes**/
+.sociales ul li span{
+    display: none;
+}
+.sociales ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    justify-content: flex-end;
+    flex:1 0 auto;
+}
+
+.sociales ul li a:before {
+    font-family: "Font Awesome 5 Brands";
+}
+.sociales ul li a[href*='facebook.com']::before {
+    content: "\f39e";
+}
+
+.sociales ul li a[href*='twitter.com']::before {
+    content: "\f099";
+}
+.sociales ul li a[href*='youtube.com']::before {
+    content: "\f431";
+}
+.sociales ul li a[href*='instagram.com']::before {
+    content: "\f16d";
+}
+
+
+
+
+.footer {
+    color: white;
+    background-color: #3F51B5;
+    margin: 3rem 0 0 0;
+    padding: 1rem;
+    text-align: center;
+}
+
+.copyright {
+    color: white;
+    background-color:#3F51B5;
+    margin: 3rem 0 0 0;
+    padding: 1rem;
+    text-align: center;
+}
+
+@media screen and (min-width:480px) {
+    .contenido-principal {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .entrada {
+        flex: 0 1 calc(50% - 1rem);
+
+    }
+}
+
+@media screen and (min-width:768px) {
+    .entrada {
+        flex: 0 1 calc(33% - 1rem);
+    }
+}
+
+
+@media screen and (min-width:480px) {
+    .contenido-principal {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .contactForm {
+        flex: 0 1 calc(30% - 1rem);
+
+    }
+}
+
+@media screen and (min-width:768px) {
+    .contactForm {
+        flex: 0 1 calc(13% - 1rem);
+    }
+}
+
+
+/** Formulario contacto **/
+
+.wrap { margin:0 auto 0 auto;
+    max-width: 1024px;       
+    }
+.contactForm {
+    max-width: 1024px;
+    border: 1px solid #f4fFfF;
+    padding: 15px 15px 15px 15px;
+    background-color: #f4f7f8;
+}
+.contactForm * {
+font-family: sans-serif;
+display: block;
+box-sizing: border-box;
+
+}
+.contactForm label {
+color: #333;
+cursor: default;
+margin: 15px 0 3px 0;
+}
+.contactForm input[type="text"], .contactForm input[type="email"], .contactForm textarea {
+padding: 8px;
+border: 1px solid #CCC;
+color: #555;
+font-size: 1em;
+width: 100%;
+overflow: hidden;
+resize: none;
+border-radius: 3px;
+-o-border-radius: 3px;
+-ms-border-radius: 3px;
+-moz-border-radius: 3px;
+}
+
+.contactForm .caracteres {
+color: green;
+}
+
+
+.contactForm .enviar {
+border: 1px solid #0169A9;
+cursor: pointer;
+float: right;
+background: linear-gradient(#08A1FF,#008DE4,#0275BB);
+-o-background: linear-gradient(#08A1FF,#008DE4,#0275BB);
+-ms-background: linear-gradient(#08A1FF,#008DE4,#0275BB);
+-moz-background: linear-gradient(#08A1FF,#008DE4,#0275BB);
+color: #FFF;
+font-size: 1em;
+margin: 10px 0 10px 15px;
+padding: 3px 9px;
+border-radius: 2px;
+-o-border-radius: 2px;
+-ms-border-radius: 2px;
+-moz-border-radius: 2px;
+}
+
